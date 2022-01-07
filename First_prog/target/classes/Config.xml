@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean class = "com.te.SpringScope.Demo" scope = "prototype"> </bean> -->
+	<!-- USING CONSTRUCTORS -->
+	<bean id="eng" class="com.te.Assisment.Engine">
+		<constructor-arg value="Ferrari "></constructor-arg>
+		<constructor-arg value="3000.00 "></constructor-arg>
+	</bean>
+
+	<!-- USING SETTER METHOD -->
+	<bean id="bike" class="com.te.Assisment.Bike">
+		<property name="name" value="BMW"></property>
+		<property name="e" ref="eng"></property>
+	</bean>
+
+</beans>

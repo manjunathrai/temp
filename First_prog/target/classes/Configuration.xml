@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 
+	<bean id="eng" class="com.te.First_prog.Engine">
+		<constructor-arg value="Ferrari"></constructor-arg>
+		<constructor-arg value="3000.00"></constructor-arg>
+	</bean>
+	<bean id="teng" class="com.te.First_prog.TurboEngine" />
+
+	<bean id="car" class="com.te.First_prog.Car">
+		<constructor-arg ref="teng"></constructor-arg>
+		<constructor-arg value="Ferrari"></constructor-arg>
+	</bean> -->
+	
+	<bean id="eng" class="com.te.setterconfig.Engine">
+	<property name = "name" value="Ford"/>
+	<property name = "capacity" value="6000.00"/>
+	</bean>
+	<bean id="car" class="com.te.setterconfig.Car">
+	<property name="name" value="BMW"></property>
+	<property name="e" ref="eng"></property>
+	</bean>
+</beans>

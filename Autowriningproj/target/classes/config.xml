@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.te.Autowriningproj.ByType.Battery">
+		<property name="name" value="Toshiba"></property>
+	</bean>
+	<bean class="com.te.Autowriningproj.ByType.Screen">
+		<property name="name" value="Led"></property>
+	</bean>
+	<bean class="com.te.Autowriningproj.ByType.Laptop"
+		autowire="byType" />
+
+	<!-- <bean id="b" class="com.te.Autowriningproj.ByName.NewBattery"> <property 
+		name="name" value="Toshiba"></property> </bean> <bean id="s" class="com.te.Autowriningproj.ByName.NewScreen"> 
+		<property name="name" value="Led"></property> </bean> <bean id="hd1" class="com.te.Autowriningproj.ByName.HardDisk"> 
+		<property name="name" value="Seagate" /> </bean> <bean id="hd2" class="com.te.Autowriningproj.ByName.HardDisk"> 
+		<property name="name" value="Sandisk" /> </bean> <bean class="com.te.Autowriningproj.ByName.NewLaptop" 
+		autowire="byName" /> -->
+
+
+
+</beans>
